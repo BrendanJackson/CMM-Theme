@@ -1,0 +1,150 @@
+@import "variables";
+
+.front-page-overlay{
+  background-image: url(../images/CMM-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+
+
+.front-page-wrap{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  background-color:  rgba(158, 4, 51, 0.5);
+
+
+  * {
+    color: $cm-white;
+  }
+
+  .xylophone-wrap{
+    width: 100%;
+    max-width: 350px;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+
+
+
+    .v-line{
+      position: absolute;
+      border: solid $cm-black 5px;
+      top: -10px;
+      bottom: 0;
+      width: 34px;
+      border-radius: 5px;
+      background-color: $cm-white;
+    }
+
+    .x-line1{left:13%;}
+    .x-line2{right:13%;}
+
+    .xylophone-peg{
+      background-color: $cm-black;
+      border-radius: 100%;
+      height: 15px;
+      width: 15px;
+      position: absolute;
+      z-index: 2;
+
+    }
+
+
+    .peg1, .peg3, .peg5, .peg7{left: 16%;}
+    .peg2, .peg4, .peg6, .peg8{right: 16%;}
+
+    .peg1, .peg2{top:12%;}
+    .peg3, .peg4{top:35%;}
+    .peg5, .peg6{top:58%;}
+    .peg7, .peg8{top:80%;}
+
+
+    .xylophone{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1;
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0;
+      -webkit-margin-start: 0;
+      -webkit-margin-end: 0;
+      -webkit-padding-start: 0;
+
+      .peg-li1{
+        margin-top: 15px;
+        width: 75%;
+      }
+      .peg-li2{ width: 80%; }
+      .peg-li3{ width: 85%; }
+      .peg-li4{
+        margin-bottom: 20px;
+        width: 90%;
+      }
+
+      .peg-aligner{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+      } // End peg-aligner
+
+      li:hover{
+        cursor: url(../images/mallet.png), auto; // , auto
+      }
+
+
+
+
+      li  {
+        height: auto;
+        text-align: center;
+        margin: 5px 0;
+        background-size: contain;
+        background-color: $cm-white;
+        border: solid $cm-black 5px;
+        border-radius: 5px;
+        position: relative;
+
+        a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          font-size: 38px;
+          color: $cm-red;
+
+        } // end a
+
+        a:hover{ color: $cm-secondary; }
+
+      } // end li
+
+
+
+    } // end xlyophone
+
+  } // End xlyophone-wrap
+
+
+}

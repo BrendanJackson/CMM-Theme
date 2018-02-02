@@ -1,0 +1,55 @@
+/*
+|------------------------------------------------
+| Sidebar Styles
+|------------------------------------------------
+| Styles that transend the entire project
+|
+|
+*/
+
+@import "variables";
+
+
+.sidebar-wrap{
+  display: flex;
+  justify-content: space-between;
+
+  .col-content{
+    width: 100%;
+    padding: 20px;
+  } // END .col-content
+
+  .col-sidebar{
+    width: 100%;
+    padding: 20px;
+  } // End col-sidebar
+
+  .right-sidebar{border-left: none;}
+  .left-sidebar{border-right: none;}
+
+} // END .sidebar-wrap
+
+
+@media screen and ( min-width: $small-width ) {
+
+  .sidebar-wrap{
+    display: flex;
+    justify-content: space-between;
+
+    .col-content{
+      width: 75%;
+      padding: 20px;
+    } // END .col-content
+
+    .col-sidebar{
+      width: 25%;
+      padding: 20px;
+    } // End .col-sidebar
+
+    .right-sidebar{border-left: solid $cm-black 1px;}
+    .left-sidebar{border-right: solid $cm-black 1px;}
+
+  } // END .sidebar-wrap
+
+
+}

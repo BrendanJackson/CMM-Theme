@@ -1,0 +1,91 @@
+@import "variables";
+
+// footer, footer * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid red 3px !important;
+// }
+
+
+footer{
+  width: 100%;
+  padding: 5%;
+  background: $cm-red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .max-width{flex-wrap: wrap;}
+
+  // Reset
+  ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+  }
+
+  #mc_embed_signup div#mce-responses {
+    float: left;
+    top: -1.4em;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    clear: both;
+    color: $cm-white;
+  }
+
+  #mc_embed_signup form{
+    background-color: $cm-red;
+    padding: 0;
+
+    span, .indicates-required, .asterisk{
+      color:$cm-white;
+      font-family: 'Amatic SC',cursive;
+    }
+    input{background-color: $cm-white;}
+    label, .datefield{color: $cm-white;}
+    .datefield{
+      display: flex;
+      align-items: center;
+    }
+
+    #mc-embedded-subscribe{
+      background-color: $cm-white;
+      color: $cm-red;
+    }
+    #mc-embedded-subscribe:hover, #mc-embedded-subscribe:focus{background-color: $cm-secondary;}
+  }
+
+  .footer-global {
+    width: 100%;
+    padding: 20px;
+  }
+
+  h1, h2, h3, h4, h5, h6, a, p{
+    color: $cm-white;
+  }
+} // footer end
+
+
+@media screen and ( min-width: $small-width ) {
+  // footer, footer * {
+  //   background: #000 !important;
+  //   color: #0f0 !important;
+  //   outline: solid red 3px !important;
+  // }
+
+
+  footer{
+
+
+
+    .footer-global { width: 50%; }
+
+
+  } // footer end
+}

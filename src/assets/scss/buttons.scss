@@ -1,0 +1,27 @@
+@import "variables";
+
+button, input[type="submit"]{
+  background-color: $cm-red;
+  color: $cm-white;
+  border-radius: 5px;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.23s ease-in-out 0s;
+  opacity: 1 !important;
+}
+
+button:hover, input[type="submit"]:hover{
+  background-color: $cm-secondary;
+  text-decoration: none;
+}
+
+a{
+  color: $cm-red;
+  transition: all 0.23s ease-in-out 0s;
+}
+a:hover,a:focus,input:focus,button:focus,.btn:focus{
+  color: $cm-secondary;
+  text-decoration: none;
+  outline-color: $cm-red;
+}

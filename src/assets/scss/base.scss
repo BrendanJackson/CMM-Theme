@@ -1,0 +1,154 @@
+/*
+|------------------------------------------------
+| Base Styles
+|------------------------------------------------
+| Styles that transend the entire project
+|
+|
+*/
+
+@import "variables";
+
+// Concrete5 Grid Resets
+div.ccm-area[data-total-blocks="0"],.ccm-area,
+.ccm-area-inline-edit-disabled, .ccm-area-edit-inline-active,
+#ccm-layout-column-wrapper-5 div, .ccm-layout-column  {
+  max-width: 100%;
+}
+
+.ccm-block-topic-list-list{
+  list-style-type: disc;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
+.ccm-area,
+.ccm-area-inline-edit-disabled, .ccm-area-edit-inline-active{
+  width: 100%;
+}
+
+div.ccm-layout-column{padding: 20px 0;}
+// END Concrete5 Grid Resets
+
+
+/**
+*  DS Calendar styles
+*/
+
+.dsEventCalendar{
+
+  .fc-agendaWeek-view{
+
+    tbody{
+
+      .fc-time-grid-container{
+
+        // tr:nth-child(n+0):nth-child(-n+14){ display: none; }
+      } // END fc-time-grid-container
+
+
+    } // END tbody
+  } // END fc-agendaWeek-view
+
+
+
+} // END dsEventCalendar
+
+/**
+*  END DS Calendar styles
+*/
+
+*{
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $cm-white;
+  margin: 0 !important;
+}
+
+.ccm-layout-column-wrapper, footer{
+  display: flex;
+}
+div{flex-wrap: wrap;}
+li{
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1,h2,h3,h4,h5,h6,a,label{
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin-bottom: 20px;
+}
+
+h1{
+  font-size:120px;
+}
+h2{
+  font-size:100px;
+}
+h3{
+  font-size:90px;
+}
+h4{
+  font-size:80px;
+}
+h5{
+  font-size:60px;
+}
+h6{
+  font-size:40px;
+}
+p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+.block{
+  display: flex;
+
+  > div{
+    max-width: 100%;
+  }
+
+  img{
+    overflow: auto;
+    width: unset;
+  }
+}
+
+.ccm-page{}
+.content-wrap{
+  margin: 0 auto;
+  padding: 5%;
+  max-width: 1200px;
+}
+/**
+* Utility Classes
+*/
+
+.flex-center{
+  display: flex;
+}
+.max-width{
+  max-width: 1200px;
+  display: flex;
+}
+
+
+@media screen and ( min-width: $small-width ) {
+  div{flex-wrap: nowrap;}
+}
