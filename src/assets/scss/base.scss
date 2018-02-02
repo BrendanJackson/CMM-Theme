@@ -155,6 +155,9 @@ p{
   display: flex;
 }
 
+@media screen and ( max-width: $small-width ) {
+  div.ccm-layout-column{width: 100%;}
+}
 
 @media screen and ( min-width: $small-width ) {
   div{flex-wrap: nowrap;}
