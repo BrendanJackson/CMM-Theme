@@ -33,9 +33,10 @@ div.ccm-area[data-total-blocks="0"],.ccm-area,
 div.ccm-layout-column{padding: 20px 0;}
 
 .ccm-block-edit img {
-    width: 100%;
+    width: 100% !important;
     height: auto;
 }
+div.ccm-layout-column{width: 100%;}
 // END Concrete5 Grid Resets
 
 
@@ -157,4 +158,5 @@ p{
 
 @media screen and ( min-width: $small-width ) {
   div{flex-wrap: nowrap;}
+  div.ccm-layout-column{width: unset;}
 }
