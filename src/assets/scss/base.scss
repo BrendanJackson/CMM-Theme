@@ -37,6 +37,18 @@ div.ccm-layout-column{padding: 20px 0;}
     height: auto;
 }
 div.ccm-layout-column{width: 100%;}
+
+.ccm-form{
+  padding: 20px;
+
+  .form-group{
+    padding: 20px 0;
+  }
+
+  .form-group input, .form-group textarea {
+    width: 100%;
+  }
+}
 // END Concrete5 Grid Resets
 
 
