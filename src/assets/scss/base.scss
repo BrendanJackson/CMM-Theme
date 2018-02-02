@@ -156,7 +156,7 @@ p{
 }
 
 @media screen and ( max-width: $small-width ) {
-  div.ccm-layout-column{width: 100%;}
+  div.ccm-layout-column{width: 100% !important; }
 }
 
 @media screen and ( min-width: $small-width ) {
