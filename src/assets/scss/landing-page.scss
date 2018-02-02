@@ -36,7 +36,9 @@
 
   .xylophone-wrap:hover{
     cursor: url(../images/mallet.png), auto;
-  }
+    cursor: url(../images/CMM-hero.png), auto;
+  } // END xylophone-wrap:hover
+
   .xylophone-wrap{
     width: 100%;
     max-width: 350px;
