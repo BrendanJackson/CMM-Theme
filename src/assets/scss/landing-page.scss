@@ -34,6 +34,9 @@
     color: $cm-white;
   }
 
+  .xylophone-wrap:hover{
+    cursor: url(../images/mallet.png), auto;
+  }
   .xylophone-wrap{
     width: 100%;
     max-width: 350px;
