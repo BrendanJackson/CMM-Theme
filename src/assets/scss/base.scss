@@ -15,7 +15,10 @@ div.ccm-area[data-total-blocks="0"],.ccm-area,
 #ccm-layout-column-wrapper-5 div, .ccm-layout-column  {
   max-width: 100%;
 }
-
+.ccm-layout-column-wrapper{
+  width: 100%;
+  display: flex;
+}
 .ccm-block-topic-list-list{
   list-style-type: disc;
   -webkit-margin-before: 0;
@@ -106,7 +109,7 @@ body{
 }
 
 
-.ccm-layout-column-wrapper, footer{
+footer{
   display: flex;
 }
 div{flex-wrap: wrap;}
