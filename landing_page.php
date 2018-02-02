@@ -49,7 +49,7 @@
           <div class="xylophone-peg peg1"></div>
           <div class="xylophone-peg peg2"></div>
           <li class="peg-li1">
-            <a href="http://localhost:8888/CandyMountainMusicV2/index.php/home">Home</a>
+            <a href="<?=$this->url('home');?>">Home</a>
           </li>
         </div>
 
@@ -57,7 +57,7 @@
           <div class="xylophone-peg peg3"></div>
           <div class="xylophone-peg peg4"></div>
           <li class="peg-li2">
-            <a href="http://localhost:8888/CandyMountainMusicV2/index.php/classes">Classes</a>
+            <a href="<?=$this->url('classes');?>">Classes</a>
           </li>
         </div>
 
@@ -65,7 +65,7 @@
           <div class="xylophone-peg peg5"></div>
           <div class="xylophone-peg peg6"></div>
           <li class="peg-li3">
-            <a href="http://localhost:8888/CandyMountainMusicV2/index.php/special-events">Special Events</a> <!-- Parties/<br> -->
+            <a href="<?=$this->url('special-events');?>-events">Special Events</a> <!-- Parties/<br> -->
           </li>
         </div>
 
@@ -73,7 +73,7 @@
           <div class="xylophone-peg peg7"></div>
           <div class="xylophone-peg peg8"></div>
           <li class="peg-li4">
-            <a href="http://localhost:8888/CandyMountainMusicV2/index.php/blog">Blog</a>
+            <a href="<?=$this->url('blog');?>">Blog</a>
           </li>
         </div>
 
