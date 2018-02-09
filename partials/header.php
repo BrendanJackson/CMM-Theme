@@ -28,7 +28,12 @@
 
       <div class="header-image"></div>
       <nav class="">
-        <div class="logo"> <a href="/"><img src="<?=$view->getThemePath()?>/dest/images/logo-stripped.png" alt="Candy Mountain Music Logo"><h1>Candy Mountain Music</h1></a> </div>
+        <div class="logo">
+          <a href="/">
+            <img src="<?=$view->getThemePath()?>/dest/images/logo-stripped.png" alt="Candy Mountain Music Logo">
+            <h5>Candy Mountain Music</h5>
+          </a>
+        </div>
         <div class="xylophone-wrap ">
           <div class="v-line x-line1"></div><div class="v-line x-line2"></div>
 
