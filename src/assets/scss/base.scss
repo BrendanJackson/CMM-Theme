@@ -10,61 +10,7 @@
 @import "variables";
 
 // Concrete5 Grid Resets
-div.ccm-area[data-total-blocks="0"],.ccm-area,
-.ccm-area-inline-edit-disabled, .ccm-area-edit-inline-active,
-#ccm-layout-column-wrapper-5 div, .ccm-layout-column  {
-  max-width: 100%;
-}
-.ccm-layout-column-wrapper{
-  width: 100%;
-  display: flex;
-}
-.ccm-layout-column-inner{
-  width: 100%;
-  max-height: 100%;
-  height: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-.ccm-block-topic-list-list{
-  list-style-type: disc;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
-  -webkit-padding-start: 0;
-}
 
-.ccm-area,
-.ccm-area-inline-edit-disabled, .ccm-area-edit-inline-active{
-  width: 100%;
-}
-
-div.ccm-layout-column{padding: 20px 0;}
-
-.ccm-block-edit img, .ccm-image-block {
-    width: 100% !important;
-    height: auto;
-}
-div.ccm-layout-column{width: 100%;}
-
-.ccm-form{
-  padding: 20px;
-
-  .form-group{
-    padding: 20px 0;
-  }
-
-  .form-group input, .form-group textarea {
-    width: 100%;
-  }
-}
-
-.ccm-block-calendar-wrapper{
-  padding-top: 20px;
-  border-top: solid 1px;
-}
 .fc-day-grid-event {
   min-height: 50px;
 }
@@ -172,18 +118,7 @@ p{
   line-height: 1.3
 }
 
-.block{
-  display: flex;
 
-  > div{
-    max-width: 100%;
-  }
-
-  img{
-    // overflow: auto;
-    // width: unset;
-  }
-}
 
 .ccm-page{}
 .content-wrap{
